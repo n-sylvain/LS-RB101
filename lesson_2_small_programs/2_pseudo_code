@@ -1,0 +1,104 @@
+Formal Pseudo-Code keywords:
+
+START	              start of the program
+SET	                sets a variable we can use for later
+GET                 retrieve input from user
+PRINT	              displays output to user
+READ	              retrieve value from variable
+IF / ELSE IF / ELSE	show conditional branches in logic
+WHILE	              show looping logic
+END	                end of the program
+
+For example, here's an example of some pseudo-code for a method that determines which number is greatest in a collection.
+
++-------------------------------------------------------------------------------------------
+|  Casual
+|  Given a collection of integers.
+|
+|  Iterate through the collection one by one.
+|    - save the first value as the starting value.
+|    - for each iteration, compare the saved value with the current value.
+|    - if the saved value is greater, or it's the same
+|      - move to the next value in the collection
+|    - otherwise, if the current value is greater
+|      - reassign the saved value as the current value
+|
+|  After iterating through the collection, return the saved value.
++-------------------------------------------------------------------------------------------
+
++-------------------------------------------------------------------------------------------
+|  Formal
+|  START
+|  
+|  # Given a collection of integers called "numbers"
+|  
+|  SET iterator = 1
+|  SET saved_number = value within numbers collection at space 1
+|  
+|  WHILE iterator <= length of numbers
+|    SET current_number = value within numbers collection at space "iterator"
+|    IF saved_number >= current_number
+|      go to the next iteration
+|    ELSE
+|      saved_number = current_number
+|  
+|    iterator = iterator + 1
+|  
+|  PRINT saved_number
+|  
+|  END
++-------------------------------------------------------------------------------------------
+
+
+For example, write out pseudo-code (both casual and formal) that does the following:
+
+
+
+1/ a method that returns the sum of two integers
+ask the user for two integers input
+save the two integers in two distincts variables
+sum the two integers in a result variables
+return the result variable to the user
+
+START
+GET integer 1 from user
+GET integer 2 from user
+SET sum of integer 1 and integer 2
+PRINT sum
+END
+
+
+2/ a method that takes an array of strings, and returns a string that is all those strings concatenated together
+Given an array of strings
+Initialize an empty string to store the concatenated result
+Iterate through each string in the array and append each string in the initialized string
+return the result
+
+START
+SET iterator = 1
+SET a resultString variable that will store the concatenated String array
+
+WHILE iterator <= length of StringArray
+  SET current_string = value within strings collection at space "iterator"
+  append reesultString with current_string
+  iterator = iterator + 1
+
+PRINT resultString
+
+
+3/ a method that takes an array of integers, and returns a new array with every other element from the original array, starting with the first element. For instance:
+every_other([1,4,7,2,5]) # => [1,7,5]
+
+Given an array of numbers
+Initialize a new empty array
+Iterate in 2 steps through the array of numbers and append the value in the new array
+return the new array to the user
+
+
+
+
+a method that determines the index of the 3rd occurrence of a given character in a string. For instance, if the given character is 'x' and the string is 'axbxcdxex', the method should return 6 (the index of the 3rd 'x'). If the given character does not occur at least 3 times, return nil.
+a method that takes two arrays of numbers and returns the result of merging the arrays. The elements of the first array should become the elements at the even indexes of the returned array, while the elements of the second array should become the elements at the odd indexes. For instance:
+Copy Code
+merge([1, 2, 3], [4, 5, 6]) # => [1, 4, 2, 5, 3, 6]
+You may assume that both array arguments have the same number of elements.
