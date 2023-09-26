@@ -94,11 +94,55 @@ Initialize a new empty array
 Iterate in 2 steps through the array of numbers and append the value in the new array
 return the new array to the user
 
+START
+Given a collection of integers
+SET iterator = 1
+SET empty array
+WHILE iterator <= length of numbers
+  SET append value of the number in space "iterator" in receiving array
+  iterator = iterator + 2
+PRINT/RETURN resulting array
+END
+
+
+4/ a method that determines the index of the 3rd occurrence of a given character in a string. For instance, if the given character is 'x' and the string is 'axbxcdxex', the method should return 6 (the index of the 3rd 'x'). If the given character does not occur at least 3 times, return nil.
+
+Given a string
+define a method
+Set an occurence count
+Set an index placeholder
+Iterate through the string until occurence count = 3
+  - if the letter matches with string(index) then add 1 to occurence count
+if occurence count = 3 return the index position
+if occurence count < 3 return NIL
+
+START
+def findThirdOccurence(char, string)
+SET occurence_count = 0
+SET current_index = 0
+WHILE occurence_count < 3
+  IF string[index] matches char
+    increment occurence_count
+  IF occurence_count = 3
+    return index
+return nil
 
 
 
-a method that determines the index of the 3rd occurrence of a given character in a string. For instance, if the given character is 'x' and the string is 'axbxcdxex', the method should return 6 (the index of the 3rd 'x'). If the given character does not occur at least 3 times, return nil.
-a method that takes two arrays of numbers and returns the result of merging the arrays. The elements of the first array should become the elements at the even indexes of the returned array, while the elements of the second array should become the elements at the odd indexes. For instance:
+5/ a method that takes two arrays of numbers and returns the result of merging the arrays. The elements of the first array should become the elements at the even indexes of the returned array, while the elements of the second array should become the elements at the odd indexes. For instance:
 Copy Code
 merge([1, 2, 3], [4, 5, 6]) # => [1, 4, 2, 5, 3, 6]
 You may assume that both array arguments have the same number of elements.
+
+Given 2 sets of arrays of same size
+Iterate through each array alternatively and append the value at index position to a new array
+
+START
+array1
+array2
+empty array
+iterator = 0
+WHILE iterator < array1 length
+  append the value at index position of array1
+  append the value at index position of array2
+return newarray
