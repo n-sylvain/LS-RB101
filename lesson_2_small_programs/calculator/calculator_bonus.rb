@@ -41,7 +41,7 @@ def operation_to_message(op)
            "Dividing"
          end
 
-  x = "A random line of code"
+  # x = "A random line of code"
 
   word
 end
