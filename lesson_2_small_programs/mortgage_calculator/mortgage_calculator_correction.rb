@@ -39,7 +39,8 @@ def message_type(type)
   return message_request, message_check, message_again
 end
 
-def input_variables(type) # 1. 'loan_amount' 2. 'annual_rate' 3. 'duration'
+# 1. 'loan_amount' 2. 'annual_rate' 3. 'duration'
+def input_variables(type)
   message_request, message_check, message_again = message_type(type)
 
   loop do
