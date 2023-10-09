@@ -1,0 +1,33 @@
+welcome: |
+  Welcome to the mortgage calculator program!
+  This program will help you calculate your mortgage parameters using the following information:
+    - your loan amount
+    - your Annual Percentage Rate (APR)
+    - your loan total duration
+  Please follow the instructions and you will get:
+    - your monthly interest rate
+    - your loan total duration in months
+    - your monthly payment
+  Let's begin
+loan_amount_request: 'Please enter the loan amount in USD: '
+loan_amount_request_again: 'This is not a correct amount.'
+loan_amount_request_check: 'The amount you have entered is USD '
+data_save: 'Do you want to save it (y/n)? '
+annual_percentage_rate_request: 'Please enter the annual percentage rate (in %): '
+annual_percentage_rate_again: 'This is not a correct percentage.'
+annual_percentage_rate_check: 'The annual percentage rate (APR) you have entered is '
+loan_duration_request: 'Please enter the loan duration (in number of months): '
+loan_duration_request_again: 'This is not a correct duration' 
+loan_duration_request_check: 'The loan duration you have entered is '
+monthly_payment: "Your monthly payment is: "
+parameters: "with the following parameters: "
+loan_amount: "Loan amount in USD: "
+monthly_rate: "Monthly Interest Rate: "
+duration: "Duration in months: "
+try_again?: "Would you like to calculate again? (y/n)"
+# result_message: |
+#   <%= messages('monthly_payment') #{monthly_payment.round(2)} 
+#   #{messages('parameters')}
+#     - #{messages('loan_amount')} #{format('%.2f', loan_amount)}
+#     - #{messages('monthly_rate')} #{(monthly_rate * 100).round(2)} % (APR: #{annual_rate} %)
+#     - #{messages('duration')} #{month_duration} (#{formatted_duration})

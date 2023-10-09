@@ -1,5 +1,5 @@
 require 'yaml'
-MESSAGES = YAML.load_file('mortgage_messages.yml')
+MESSAGES = YAML.load_file('mortgage_messages_correction.yml')
 
 def prompt(message)
   Kernel.puts("=> #{message}")
@@ -84,6 +84,7 @@ loop do
   monthly_rate = (annual_rate / 12) / 100
   monthly_payment = loan_amount *
                     (monthly_rate / (1 - ((1 + monthly_rate)**(-month_duration))))
+
 
   result_message = <<-MSG
   #{messages('monthly_payment')} #{monthly_payment.round(2)}
