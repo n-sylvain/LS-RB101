@@ -1,7 +1,11 @@
-def string_lengths(sentence)
-  strings = sentence.split
+# scope.rb
 
-  strings.map { |chars| chars.length }
+a = 5
+
+3.times do |n|    # method invocation with a block
+  a = 3
+  b = 5           # b is initialized in the inner scope
 end
 
-p string_lengths("to be or not to be")
+puts a
+puts b            # is b accessible here, in the outer scope?
