@@ -1,10 +1,3 @@
-name = "Lisa"
+numbers = [1, 2, 3, 4, 5]
 
-def name
-  "George"
-end
-
-loop do
-  puts name
-  break
-end
+numbers.delete(3)
