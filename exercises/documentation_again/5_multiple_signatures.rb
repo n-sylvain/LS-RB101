@@ -1,4 +1,4 @@
 a = %w(a b c d e)
-puts a.fetch(7)                       #raises an error, out of range
-puts a.fetch(7, 'beats me')           #beat me
-puts a.fetch(7) { |index| index**2 }  #49
+puts a.fetch(7)                       # raises an error, out of range
+puts a.fetch(7, 'beats me')           # beat me
+puts a.fetch(7) { |index| index**2 }  # 49
