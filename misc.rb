@@ -1,3 +1,5 @@
-numbers = [1, 2, 3, 4, 5]
+def reversed_number(number)
+  puts number.to_s.reverse.to_i
+end
 
-numbers.delete(3)
+reversed_number(123_456)
