@@ -1,5 +1,5 @@
-a = "forty two"
-b = "forty two"
+a = 42
+b = 42
 c = a
 
 puts a.object_id
